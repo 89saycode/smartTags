@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商品详情</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/coupon.css" />
+  </head>
+  <body>
+    <div class="header">
+      <span onclick="goBack()"><i class="fas fa-arrow-left"></i></span>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <span>优惠券</span>
+        </div>
+        <div class="card-body">
+          <div class="coupon-item">
+            <div class="coupon-name">满100减10元</div>
+            <div class="coupon-status">有效期：2023-12-31</div>
+          </div>
+          <div class="coupon-item">
+            <div class="coupon-name">满200减20元</div>
+            <div class="coupon-status">有效期：2023-12-31</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = 'profile.html';
+        }
+    </script>
+  </body>
+</html>

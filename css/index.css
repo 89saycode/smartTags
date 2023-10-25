@@ -1,0 +1,148 @@
+/* CSS 样式 */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 20px;
+}
+
+.like-icon {
+  background-color: #fff;
+  padding: 5px 6px;
+  border-radius: 50%;
+}
+
+.like-icon i {
+  color: #d65c63;
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+  /* padding: 10px; */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; /* 这样可以为 search-btn 留出空间 */
+  box-sizing: border-box;
+  background-color: #fefefe;
+  border: none;
+  border-radius: 8px;
+}
+
+.search-btn {
+  color: #9b9c9c;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.category {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  padding: 20px 0;
+}
+
+.category::-webkit-scrollbar {
+  /* Chrome, Safari, Opera */
+  display: none;
+}
+
+.navbar {
+  display: inline-block;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.product-title {
+  font-size: 23px;
+  padding: 20px 0;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.product {
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+}
+
+.product:nth-child(odd) {
+  grid-row: span 2;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product .like-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.product .product-name {
+  padding: 5px;
+}
+.product .product-name,
+.price {
+  font-weight: bold;
+}
+
+.price-detail {
+  padding: 5px;
+}
+
+.product .price {
+  color: #000000;
+}
+
+.product .history-price {
+  text-decoration: line-through;
+  color: gray;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人中心</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/tabbar.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+  </head>
+  <body>
+    <header>
+      <div class="card-body">
+        <img src="avatar.jpg" alt="头像" class="avatar" />
+        <p><i class="fas fa-user"></i> 那展鹏</p>
+        <button class="btn"><i class="fas fa-edit"></i> 更新个人信息</button>
+      </div>
+    </header>
+    <div class="container">
+      <div class="card"></div>
+      <div class="card">
+        <div class="card-header">
+          <span>我的订单</span>
+          <span>
+            <a href="">查看全部 ></a>
+          </span>
+        </div>
+        <div class="card-body">
+          <div class="order-item">
+            <div class="order-name">历史订单</div>
+            <div class="order-status">2</div>
+          </div>
+          <div class="order-item">
+            <div class="order-name">待评论</div>
+            <div class="order-status">1</div>
+          </div>
+          <div class="order-item">
+            <div class="order-name">售后中</div>
+            <div class="order-status">3</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body" id="navbar-list">
+          <div class="like-item">
+            <div class="card-label">我的喜欢</div>
+            <div class="like-status">></div>
+          </div>
+          <div class="like-item">
+            <div class="like-name">我的优惠券</div>
+            <div class="like-status">></div>
+          </div>
+          <div class="like-item">
+            <div class="like-name">积分兑换</div>
+            <div class="like-status">></div>
+          </div>
+          <div class="like-item">
+            <div class="like-name">联系客服</div>
+            <div class="like-status">></div>
+          </div>
+          <div class="like-item">
+            <div class="like-name">关于我们</div>
+            <div class="like-status">></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabbar">
+      <a href="index.html">
+        <i class="fas fa-circle-notch"></i>
+      </a>
+      <a href="hall.html">
+        <i class="fas fa-align-center"></i>
+      </a>
+      <a href="message.html">
+        <i class="fas fa-comment"></i>
+      </a>
+      <a href="profile.html" class="hover">
+        <i class="fas fa-user"></i>
+      </a>
+    </div>
+    <script src="js/profile-bar.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

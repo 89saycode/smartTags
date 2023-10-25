@@ -1,0 +1,22 @@
+.tabbar {
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    background-color: #fff; /* 设置你的背景颜色 */
+    text-align: center;
+    padding: 20px 0;
+    height: 60px; /* 设置导航栏高度 */
+    display: flex;
+    justify-content: center;
+}
+
+.tabbar a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #97999b; /* 设置你的链接颜色 */
+    font-size: 30px;
+}
+
+.tabbar a.hover{
+    color: #3937a6;
+}

@@ -1,0 +1,34 @@
+.container {
+  padding: 20px;
+}
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.card-header {
+  background-color: #354db6;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-body {
+  padding: 20px;
+}
+.coupon-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.coupon-item .coupon-name {
+  font-weight: bold;
+}
