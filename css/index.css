@@ -19,15 +19,18 @@ li {
   padding: 0 20px;
 }
 
-.header {
+header {
   text-align: center;
-  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: #354db6;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-.header h1 {
+header h1 {
+  color: #fff;
   font-size: 20px;
 }
 
@@ -44,7 +47,6 @@ li {
 .search-box {
   position: relative;
   width: 100%;
-  /* padding: 10px; */
 }
 
 .search-input {
@@ -89,6 +91,11 @@ li {
   padding: 10px;
   background: #fff;
   border-radius: 10px;
+}
+
+.nav-item.hover {
+  color: #fff;
+  background-color: #354db6;
 }
 
 .product-title {

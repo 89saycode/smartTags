@@ -76,6 +76,8 @@ header i {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding: 0px 25px 50px 25px;
+  position: sticky;
+  bottom: 0;
 }
 
 .card-line {

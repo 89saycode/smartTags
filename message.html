@@ -6,87 +6,9 @@
   <title>消息</title>
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-  <style>
-    /* 基本样式 */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #f60;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      padding: 20px;
-    }
-    .card {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-      overflow: hidden;
-    }
-    .card-header {
-      background-color: #f60;
-      color: #fff;
-      font-weight: bold;
-      padding: 15px;
-      text-transform: uppercase;
-    }
-    .card-body {
-      padding: 20px;
-    }
-    .card-body p {
-      margin: 0;
-      line-height: 1.5;
-    }
-    .card-body strong {
-      font-weight: bold;
-    }
-    .btn {
-      background-color: #f60;
-      border: none;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-right: 10px;
-    }
-    .btn:hover {
-      background-color: #ff8533;
-    }
-    .message-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 0;
-      border-bottom: 1px solid #eee;
-    }
-    .message-item .message-title {
-      font-weight: bold;
-    }
-    .message-item .message-time {
-      color: #999;
-    }
-    .message-item .message-content {
-      color: #666;
-      margin-top: 10px;
-    }
-    .badge {
-      background-color: #f60;
-      color: #fff;
-      border-radius: 50%;
-      padding: 5px 8px;
-      font-size: 12px;
-      position: absolute;
-      top: 5px;
-      right: 5px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/tabbar.css">
+  <link rel="stylesheet" href="css/message.css">
 </head>
 <body>
   <header>
@@ -118,7 +40,7 @@
             <div class="message-title">系统升级通知</div>
             <div class="message-time">2023-10-25 10:00</div>
           </div>
-          <div class="badge">1</div>
+          <div class="badge badge-white">3</div>
         </div>
         <div class="message-item">
           <div>
@@ -134,7 +56,7 @@
         </div>
       </div>
     </div>
-    <div class="card">
+    <div class="card" style="margin-bottom: 70px;">
       <div class="card-header">活动通知</div>
       <div class="card-body">
         <div class="message-item">
@@ -145,6 +67,20 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="tabbar">
+    <a href="index.html">
+      <i class="fas fa-circle-notch"></i>
+    </a>
+    <a href="hall.html">
+      <i class="fas fa-align-center"></i>
+    </a>
+    <a href="message.html" class="hover">
+      <i class="fas fa-comment"></i>
+    </a>
+    <a href="profile.html">
+      <i class="fas fa-user"></i>
+    </a>
   </div>
   <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
 </body>
