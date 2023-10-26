@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>奥利奥</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../../css/product.css" />
+  </head>
+  <body>
+    <div class="header">
+      <span onclick="goBack()"><i class="fas fa-arrow-left"></i></span>
+      <span onclick="share()"><i class="fas fa-share-alt"></i></span>
+    </div>
+    <div class="container">
+      <div class="image-container">
+        <img class="main-image" src="../../../images/product/p2_3.jpeg" alt="商品图片" />
+        <div class="main-thumbnail">
+          <img
+            class="thumbnail selected"
+            src="../../../images/product/p2_3.jpeg"
+            alt="奥利奥"
+            onclick="changeImage('../../../images/product/p2_3.jpeg', this)"
+            tabindex="0"
+          />
+          <img
+            class="thumbnail"
+            src="../../../images/product/p2_2.jpeg"
+            alt="奥利奥"
+            onclick="changeImage('../../../images/product/p2_2.jpeg', this)"
+            tabindex="0"
+          />
+        </div>
+      </div>
+      <div class="details">
+        <div class="card-line"></div>
+        <div class="details-item detail-one">
+          <span class="product-name">奥利奥</span>
+          <span class="product-price">￥5.00</span>
+        </div>
+        <div class="details-item">
+          <span class="details-label">发源地:</span>
+          <span class="details-value">哈尔滨信息工程学院</span>
+        </div>
+        <div class="details-item">
+          <span class="details-label">保质期:</span>
+          <span class="details-value">1年</span>
+          <span class="details-label" style="margin-left: 30px;">距离临期:</span>
+          <span class="details-value">300天</span>
+        </div>
+        <div class="details-item">
+          <span class="details-label">已售:</span>
+          <span class="details-value">10000件</span>
+        </div>
+        <div class="details-item">
+          <span class="details-label">库存:</span>
+          <span class="details-value">2000件</span>
+        </div>
+        <button class="comment-btn" id="showComments">查看评论</button>
+        <button class="comment-btn" id="">智能寻找</button>
+        <button class="comment-btn" id="">智能讲解</button>
+      </div>
+    </div>
+    <div id="comment-bg" class="hidden"></div>
+    <div id="comments" class="hidden">
+      <h2>商品评论</h2>
+      <div class="comment">
+        <h3>王**</h3>
+        <p>这个商品真的很棒，质量超乎我的预期，值得推荐！</p>
+      </div>
+      <div class="comment">
+        <h3>李*</h3>
+        <p>物流速度很快，包装也很到位，商品用起来很舒服，五星好评！</p>
+      </div>
+      <div class="comment">
+        <h3>王*</h3>
+        <p>商品和描述一致，非常满意，以后还会再来。</p>
+      </div>
+      <div class="comment">
+        <h3>周*</h3>
+        <p>总体来说还可以，但是有一点小瑕疵，希望商家可以改进。</p>
+      </div>
+      <div class="comment">
+        <h3>赵**</h3>
+        <p>总体来说还可以，但是有一点小瑕疵，希望商家可以改进。</p>
+      </div>
+      <div class="comment">
+        <h3>唐*</h3>
+        <p>总体来说还可以，但是有一点小瑕疵，希望商家可以改进。</p>
+      </div>
+      <div class="comment">
+        <h3>甘**</h3>
+        <p>总体来说还可以，但是有一点小瑕疵，希望商家可以改进。</p>
+      </div>
+    </div>
+    <script src="../../../js/product-details.js"></script>
+    <script>
+      document
+        .getElementById("showComments")
+        .addEventListener("click", function () {
+          document.getElementById("comment-bg").classList.remove("hidden");
+          document.getElementById("comments").classList.remove("hidden");
+          document.getElementById("comments").classList.add("active");
+        });
+
+      document.getElementById("comment-bg").addEventListener("click", function () {
+        document.getElementById("comment-bg").classList.add("hidden");
+        document.getElementById("comments").classList.add("hidden");
+        document.getElementById("comments").classList.remove("active");
+      });
+
+      document.getElementById("bindLanguage").addEventListener("click", function () {
+        document.getElementById("comment-bg").classList.add("hidden");
+        document.getElementById("lan-container").classList.add("hidden");
+      });
+
+      function goBack() {
+        window.location.href = "../../../index.html"
+      }
+    </script>
+  </body>
+</html>

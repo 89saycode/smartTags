@@ -10,6 +10,15 @@ body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: #010101;
+}
+
+li {
+  list-style-type: none;
+}
+
 .header {
   width: 90%;
   padding: 0 15px;
@@ -126,7 +135,7 @@ header i {
   color: #fff;
   font-size: 20px;
   background: #354db6;
-  width: 100%;
+  width: 32%;
   height: 45px;
   border: none;
   border-radius: 10px;
@@ -147,13 +156,14 @@ header i {
 .hidden {
   display: none;
 }
+
 #comment-bg {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 
@@ -171,21 +181,51 @@ header i {
 }
 #comments h2 {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-#comments .comment {
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
-}
-#comments .comment h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
+#comments .comment {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 5px 0;
+}
+#comments .comment h3 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
 #comments .comment p {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #comments.active {
   left: 0;
+}
+
+.language {
+  background: #354db6;
+  width: 50%;
+  height: 125px;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  padding: 0 10px;
+  border-radius: 10px;
+  box-shadow: #354db6 2px 2px 10px;
+  z-index: 999;
+}
+
+.language ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.language li {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.language a {
+  text-decoration: none;
+  color: black;
 }

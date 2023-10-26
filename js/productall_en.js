@@ -18,46 +18,46 @@ function createProductHTML(product) {
 
 var products = [
   {
-    image: "images/product/p1_3.jpeg",
-    name: "可比克薯片",
+    image: "../../images/product/p1_3.jpeg",
+    name: "COBIC CHIPS",
     price: "5.00",
     historyPrice: "6.00",
-    link: 'page/cn/1/product_cn.html'
+    link: './1/product_en.html'
   },
   {
-    image: "images/product/p2_1.jpeg",
-    name: "奥利奥",
+    image: "../../images/product/p2_1.jpeg",
+    name: "Oreo",
     price: "5.00",
     historyPrice: "7.00",
-    link: 'page/cn/2/product_cn.html'
+    link: './2/product_en.html'
   },
   {
-    image: "images/product/p3_1.jpeg",
-    name: "好丽友派",
+    image: "../../images/product/p3_1.jpeg",
+    name: "Haoli Youpai",
     price: "10.00",
     historyPrice: "11.00",
-    link: 'page/cn/3/product_cn.html'
+    link: './3/product_en.html'
   },
   {
-    image: "images/product/p4_1.jpeg",
-    name: "冰红茶",
+    image: "../../images/product/p4_1.jpeg",
+    name: "Iced Tea",
     price: "2.00",
     historyPrice: "3.00",
-    link: 'page/cn/4/product_cn.html'
+    link: './4/product_en.html'
   },
   {
-    image: "images/product/p5_1.jpeg",
-    name: "雪碧",
+    image: "../../images/product/p5_1.jpeg",
+    name: "Sprite",
     price: "2.00",
     historyPrice: "3.00",
-    link: 'page/cn/5/product_cn.html'
+    link: './5/product_en.html'
   },
   {
-    image: "images/product/p6_1.jpeg",
-    name: "果冻",
+    image: "../../images/product/p6_1.jpeg",
+    name: "jelly",
     price: "4.00",
     historyPrice: "3.00",
-    link: 'page/cn/6/product_cn.html'
+    link: './6/product_en.html'
   },
 ];
 

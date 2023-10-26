@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COBIC CHIPS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../../css/product.css" />
+  </head>
+  <body>
+    <div class="header">
+      <span onclick="goBack()"><i class="fas fa-arrow-left"></i></span>
+      <span onclick="share()"><i class="fas fa-share-alt"></i></span>
+    </div>
+    <div class="container">
+      <div class="image-container">
+        <img class="main-image" src="../../../images/product/p1_3.jpeg" alt="商品图片" />
+        <div class="main-thumbnail">
+          <img
+            class="thumbnail selected"
+            src="../../../images/product/p1_3.jpeg"
+            alt="COBIC CHIPS"
+            onclick="changeImage('../../../images/product/p1_3.jpeg', this)"
+            tabindex="0"
+          />
+          <img
+            class="thumbnail"
+            src="../../../images/product/p1_2.jpeg"
+            alt="COBIC CHIPS"
+            onclick="changeImage('../../../images/product/p1_2.jpeg', this)"
+            tabindex="0"
+          />
+        </div>
+      </div>
+      <div class="details">
+        <div class="card-line"></div>
+        <div class="details-item detail-one">
+          <span class="product-name">COBIC CHIPS</span>
+          <span class="product-price">￥5.00</span>
+        </div>
+        <div class="details-item">
+          <span class="details-label">Origin:</span>
+          <span class="details-value">Harbin Institute of Information Engineering</span>
+        </div>
+        <div class="details-item">
+          <span class="details-label">Quality:</span>
+          <span class="details-value">1 year</span>
+          <span class="details-label" style="margin-left: 30px;">Distance:</span>
+          <span class="details-value">200 days</span>
+        </div>
+        <div class="details-item">
+          <span class="details-label">Sold:</span>
+          <span class="details-value">10000 Pieces</span>
+        </div>
+        <div class="details-item">
+          <span class="details-label">Inventory:</span>
+          <span class="details-value">5000 Pieces</span>
+        </div>
+        <button class="comment-btn" id="showComments">Comments</button>
+        <button class="comment-btn" id="">Search</button>
+        <button class="comment-btn" id="">Explanation</button>
+      </div>
+    </div>
+    <div id="comment-bg" class="hidden"></div>
+    <div id="comments" class="hidden">
+      <h2>Product Review</h2>
+      <div class="comment">
+        <h3>** Wang</h3>
+        <p>This product is really great, the quality exceeds my expectations, and it is worth recommending!</p>
+      </div>
+      <div class="comment">
+        <h3>* Li</h3>
+        <p>The logistics speed is very fast, the packaging is also in place, and the products are very comfortable to use, with five-star praise!</p>
+      </div>
+      <div class="comment">
+        <h3>* Wang</h3>
+        <p>The product and description are consistent, very satisfied, and we will come back again in the future.</p>
+      </div>
+      <div class="comment">
+        <h3>* Zhou</h3>
+        <p>Overall, it's okay, but there are a few minor flaws. I hope the merchant can improve.</p>
+      </div>
+      <div class="comment">
+        <h3>** Zhao</h3>
+        <p>Overall, it's okay, but there are a few minor flaws. I hope the merchant can improve.</p>
+      </div>
+      <div class="comment">
+        <h3>* Tang</h3>
+        <p>Overall, it's okay, but there are a few minor flaws. I hope the merchant can improve.</p>
+      </div>
+      <div class="comment">
+        <h3>** Gan</h3>
+        <p>Overall, it's okay, but there are a few minor flaws. I hope the merchant can improve.</p>
+      </div>
+    </div>
+    <script src="../../../js/product-details.js"></script>
+    <script>     
+
+      document
+        .getElementById("showComments")
+        .addEventListener("click", function () {
+          document.getElementById("comment-bg").classList.remove("hidden");
+          document.getElementById("comments").classList.remove("hidden");
+          document.getElementById("comments").classList.add("active");
+        });
+
+      document.getElementById("comment-bg").addEventListener("click", function () {
+        document.getElementById("comment-bg").classList.add("hidden");
+        document.getElementById("comments").classList.add("hidden");
+        document.getElementById("comments").classList.remove("active");
+      });
+
+      document.getElementById("bindLanguage").addEventListener("click", function () {
+        document.getElementById("comment-bg").classList.add("hidden");
+      });
+
+      function goBack() {
+        window.location.href = "../index_en.html"
+      }
+    </script>
+  </body>
+</html>
