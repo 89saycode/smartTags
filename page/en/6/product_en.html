@@ -61,8 +61,14 @@
           <span class="details-value">2000 Pieces</span>
         </div>
         <button class="comment-btn" id="showComments">Comments</button>
-        <button class="comment-btn" id="">Search</button>
+        <button class="comment-btn" id="searchBtn">Search</button>
         <button class="comment-btn" id="">Explanation</button>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="loader"></span>
+        <p>Looking for products...</p>
       </div>
     </div>
     <div id="comment-bg" class="hidden"></div>
@@ -98,6 +104,7 @@
       </div>
     </div>
     <script src="../../../js/product-details.js"></script>
+    <script src="../../../js/findWay.js"></script>
     <script>
       document
         .getElementById("showComments")
