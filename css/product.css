@@ -231,7 +231,6 @@ header i {
 }
 
 /* 寻找商品 模态框 */
-
 .modal {
   display: none;
   position: fixed;
@@ -266,4 +265,10 @@ header i {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+
+.map {
+  width: 200px;
+  height: auto;
 }
