@@ -65,8 +65,14 @@
           <span class="details-value">200件</span>
         </div>
         <button class="comment-btn" id="showComments">评论</button>
-        <button class="comment-btn" id="">寻找</button>
+        <button class="comment-btn" id="searchBtn">寻找</button>
         <button class="comment-btn" id="">讲解</button>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="loader"></span>
+        <p>正在寻找商品中...</p>
       </div>
     </div>
     <div id="comment-bg" class="hidden"></div>
@@ -110,6 +116,7 @@
       </ul>
     </div>
     <script src="../js/product-details.js"></script>
+    <script src="../js/findWay.js"></script>
     <script>
       window.onload = function () {
         console.log("我执行了");
